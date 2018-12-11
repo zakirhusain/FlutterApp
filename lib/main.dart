@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-      title: "Welcome App",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Greetings App"),
-        ),
-        body: Material(
-          color: Colors.deepPurple,
-          child: Center(
-            child: Text(
-              "As-salamu alaimum",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(color: Colors.white, fontSize: 36.0),
-            ),
+import 'screens/home.dart';
+
+void main() => runApp(WelcomeFlutterApp());
+
+class WelcomeFlutterApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "Welcome App",
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("Greetings App"),
+            backgroundColor: Colors.purpleAccent,
           ),
-        ),
-      )
-    )
-  );
+          body: Home()
+        )
+    );
+  }
 }

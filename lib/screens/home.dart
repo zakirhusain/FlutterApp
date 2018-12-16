@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
     String greeting = "";
     DateTime now = DateTime.now();
     int hour = now.hour;
+    int minute = now.minute;
     if (hour < 12) {
       greeting = "Good Morning";
     } else if (hour < 18) {
@@ -26,6 +27,7 @@ class Home extends StatelessWidget {
     } else {
       greeting = "Good Evening";
     }
-    return greeting;
+    String minutes = (minute < 10) ? "0" + minute.toString() : minute.toString();
+    return "It's now " + hour.toString() + ":" + minutes + ".\n" + greeting;
   }
 }

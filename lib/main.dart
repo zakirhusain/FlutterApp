@@ -9,7 +9,7 @@ class WelcomeFlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: "Welcome App",
+        title: "Greetings App",
         home: Scaffold(
           appBar: AppBar(
             title: Text("Greetings App"),

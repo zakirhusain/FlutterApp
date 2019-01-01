@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'screens/home.dart';
 
 void main() => runApp(WelcomeFlutterApp());
-
+// pointless comment for testing purpose
 class WelcomeFlutterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
